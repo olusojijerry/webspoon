@@ -3,6 +3,7 @@ package com.webspoon.assignment.domain;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.UUID;
 
 @Data
 public class Snippet {
@@ -11,4 +12,53 @@ public class Snippet {
     public Date expiresIn;
     public String snippet;
     public Date createdDt;
+    public Integer likes = 0;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getExpiresIn() {
+        return expiresIn;
+    }
+
+    public void setExpiresIn(Date expiresIn) {
+        this.expiresIn = expiresIn;
+    }
+
+    public String getSnippet() {
+        return snippet;
+    }
+
+    public void setSnippet(String snippet) {
+        this.snippet = snippet;
+    }
+
+    public Date getCreatedDt() {
+        return createdDt;
+    }
+
+    public void setCreatedDt(Date createdDt) {
+        this.createdDt = createdDt;
+    }
+
+    public Integer getLikes() {
+        return likes;
+    }
+
+    public void setLikes(Integer likes) {
+        this.likes = likes;
+    }
 }
