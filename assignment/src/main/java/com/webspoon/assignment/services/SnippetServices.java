@@ -7,7 +7,6 @@ import com.webspoon.assignment.dto.SnippetResponseDto;
 import com.webspoon.assignment.exception.ApiException;
 import com.webspoon.assignment.utils.Constants;
 import com.webspoon.assignment.utils.Utils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
@@ -15,7 +14,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-import java.util.spi.AbstractResourceBundleProvider;
 
 @Service
 public class SnippetServices {

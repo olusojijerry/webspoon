@@ -6,11 +6,10 @@ import com.webspoon.assignment.dto.SnippetResponseDto;
 import com.webspoon.assignment.exception.ApiException;
 import com.webspoon.assignment.services.SnippetServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.HashMap;
-import java.util.UUID;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("snippets/recipe")
